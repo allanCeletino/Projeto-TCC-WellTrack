@@ -1,0 +1,10 @@
+package com.welltrack.Enum;
+
+public enum TipoRefeicao {
+CAFE_MANHA,//6:00 as 8:30
+LANCHE_MANHA,//9:30 AS 10:30
+ALMOCO,//12:00 AS 12:30
+LANCHE_TARDE, //15:30 AS 17:00
+JANTAR, //19:00 AS 20:30
+LANCHE_NOITE//22:00 AS 00:00
+}
