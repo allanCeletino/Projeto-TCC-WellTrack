@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+:root {
+  --bg-dark: #0a0a0a;
+  --bg-card: #141414;
+  --border-color: #262626;
+  --brand-lime: #ccff00;
+  --brand-lime-hover: #b3e600;
+  --text-white: #ffffff;
+  --text-muted: #a3a3a3;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.welltrack-body {
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: var(--brand-lime);
+  color: #000;
+}
+
+/* Header */
+.welltrack-header {
+  width: 100%;
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.25rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.welltrack-logo {
+  color: var(--brand-lime);
+  font-size: 1.75rem;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.welltrack-nav-text {
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+.welltrack-link {
+  color: var(--text-white);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.welltrack-link:hover {
+  color: var(--brand-lime);
+}
+
+/* Main & Card - Aumentado para melhor legibilidade */
+.welltrack-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+}
+
+.welltrack-card {
+  width: 100%;
+  max-width: 560px; /* Expandido de 440px para 560px */
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 1.25rem;
+  padding: 2.75rem 3rem; /* Espaçamento interno bem maior */
+  box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.8);
+  position: relative;
+  overflow: hidden;
+}
+
+.welltrack-glow {
+  position: absolute;
+  top: -8rem;
+  right: -8rem;
+  width: 16rem;
+  height: 16rem;
+  background: rgba(204, 255, 0, 0.08);
+  border-radius: 50%;
+  filter: blur(50px);
+  pointer-events: none;
+}
+
+/* Form Header */
+.welltrack-form-header {
+  margin-bottom: 2.25rem;
+}
+
+.welltrack-eyebrow {
+  color: var(--brand-lime);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+.welltrack-title {
+  font-size: 2.25rem; /* Título maior e imponente */
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+.welltrack-subtitle {
+  color: var(--text-muted);
+  font-size: 1rem; /* Aumentado para leitura confortável */
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
+/* Form Elements */
+.welltrack-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.welltrack-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.welltrack-label {
+  font-size: 0.85rem; /* Labels maiores */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.welltrack-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.welltrack-input-icon {
+  position: absolute;
+  left: 1.15rem;
+  color: var(--text-muted);
+  pointer-events: none;
+  font-size: 1rem;
+}
+
+.welltrack-input {
+  width: 100%;
+  background-color: var(--bg-dark);
+  border: 1px solid var(--border-color);
+  border-radius: 0.85rem;
+  padding: 0.9rem 1.15rem 0.9rem 3.25rem; /* Altura e padding confortáveis */
+  font-size: 1rem; /* Texto digitado maior e legível */
+  color: var(--text-white);
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+.welltrack-input-number {
+  padding-left: 1.15rem !important; /* Inputs numéricos sem ícone esquerdo */
+  text-align: center;
+}
+
+.welltrack-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem;
+}
+
+.welltrack-input-password {
+  padding-right: 3.25rem;
+}
+
+.welltrack-input::placeholder {
+  color: rgba(163, 163, 163, 0.5);
+  font-size: 0.95rem;
+}
+
+.welltrack-input:focus {
+  border-color: var(--brand-lime);
+}
+
+.welltrack-eye-btn {
+  position: absolute;
+  right: 1.15rem;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.welltrack-eye-btn:hover {
+  color: var(--text-white);
+}
+
+.welltrack-mensagem {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: -0.25rem;
+}
+
+/* CTA Button */
+.welltrack-cta-button {
+  width: 100%;
+  background-color: var(--brand-lime);
+  color: #000;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 1rem; /* Botão mais destacado */
+  padding: 1.15rem;
+  border-radius: 0.85rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 0 25px rgba(204, 255, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.welltrack-cta-button:hover {
+  background-color: var(--brand-lime-hover);
+}
+
+.welltrack-cta-button i {
+  transition: transform 0.2s;
+}
+
+.welltrack-cta-button:hover i {
+  transform: translateX(4px);
+}
+
+/* Divider & Social */
+.welltrack-divider {
+  position: relative;
+  text-align: center;
+  margin: 1.75rem 0;
+}
+
+.welltrack-divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--border-color);
+}
+
+.welltrack-divider span {
+  position: relative;
+  background-color: var(--bg-card);
+  padding: 0 1rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.welltrack-social-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.welltrack-social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.9rem 1rem;
+  background-color: var(--bg-dark);
+  border: 1px solid var(--border-color);
+  border-radius: 0.85rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-white);
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.welltrack-social-btn:hover {
+  border-color: var(--text-muted);
+}
+
+/* Footer */
+.welltrack-footer {
+  width: 100%;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  border-top: 1px solid rgba(38, 38, 38, 0.4);
+} 

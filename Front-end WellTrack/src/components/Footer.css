@@ -1,0 +1,10 @@
+.welltrack-footer {
+  width: 100%;
+  padding: 1.75rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #777777;
+  border-top: 1px solid #161616;
+  background-color: var(--bg-color, #0b0b0b);
+  margin-top: auto;
+}

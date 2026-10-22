@@ -1,0 +1,79 @@
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 50px;
+  border-bottom: 1px solid var(--card-border);
+  background-color: var(--bg-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+}
+
+.welltrack-logo-img {
+  height: 145px; /* ajuste conforme necessário */
+  object-fit: contain;
+}
+
+.dashboard-nav {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-item {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: color 0.2s ease;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  color: var(--primary-neon);
+}
+
+.header-user-action {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-greeting {
+  font-size: 0.95rem;
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.botao-sair {
+  background-color: transparent;
+  border: 1px solid var(--card-border);
+  color: var(--text-main);
+  padding: 8px 18px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  border-radius: 6px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.2s ease;
+}
+
+.botao-sair:hover {
+  border-color: #ff4d4d;
+  color: #ff4d4d;
+}
+
+@media (max-width: 1200px) {
+  .dashboard-nav {
+    display: none;
+  }
+}

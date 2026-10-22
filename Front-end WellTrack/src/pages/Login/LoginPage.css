@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+.welltrack-login-container {
+  font-family: 'Inter', sans-serif;
+  background-color: #0b0b0b;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Header styles */
+.welltrack-header {
+  width: 100%;
+  border-bottom: 1px solid #1f1f1f;
+  padding: 1.25rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(11, 11, 11, 0.8);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.welltrack-brand {
+  color: #ccff00;
+  font-size: 1.75rem;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: -0.05em;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.welltrack-brand-icon {
+  color: #ccff00;
+}
+
+.welltrack-brand-sub {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #888888;
+  font-weight: 700;
+  padding-left: 1rem;
+  border-left: 1px solid #262626;
+  margin-left: 0.75rem;
+}
+
+.welltrack-header-right {
+  font-size: 1.5rem;
+  color: #888888;
+  display: flex;
+  gap: 0.5rem;
+  padding-right: 5rem;
+}
+
+.welltrack-link-accent {
+  color: #ccff00;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.welltrack-link-accent:hover {
+  color: #b3e600;
+}
+
+/* Main section styles */
+.welltrack-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 1.5rem;
+}
+
+.welltrack-card {
+  width: 100%;
+  max-width: 480px;
+  background-color: #121212;
+  border: 1px solid #222222;
+  border-radius: 1.25rem;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 25px rgba(204, 255, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.welltrack-card-glow-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #ccff00, transparent);
+}
+
+.welltrack-card-header {
+  text-align: center;
+  margin-bottom: 2.25rem;
+}
+
+.welltrack-badge {
+  display: inline-block;
+  padding: 0.35rem 0.9rem;
+  background-color: rgba(204, 255, 0, 0.1);
+  border: 1px solid rgba(204, 255, 0, 0.2);
+  border-radius: 9999px;
+  color: #ccff00;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.85rem;
+}
+
+.welltrack-title {
+  font-size: 2.15rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  font-style: italic;
+  color: #ffffff;
+  margin: 0;
+}
+
+.welltrack-subtitle {
+  font-size: 0.95rem;
+  color: #999999;
+  margin-top: 0.6rem;
+  margin-bottom: 0;
+}
+
+/* Form styles */
+.welltrack-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.welltrack-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.welltrack-field-group label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #b0b0b0;
+}
+
+.welltrack-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welltrack-forgot-link {
+  font-size: 0.8rem;
+  color: #888888;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.welltrack-forgot-link:hover {
+  color: #ccff00;
+}
+
+.welltrack-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.welltrack-input-icon {
+  position: absolute;
+  left: 1.15rem;
+  color: #777777;
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+.welltrack-input-wrapper input {
+  width: 100%;
+  background-color: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 0.85rem;
+  padding: 1rem 1.15rem 1rem 2.85rem;
+  font-size: 1rem;
+  color: #ffffff;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.welltrack-input-wrapper input::placeholder {
+  color: #555555;
+}
+
+.welltrack-input-wrapper input:focus {
+  border-color: #ccff00;
+  box-shadow: 0 0 0 1px #ccff00;
+}
+
+.welltrack-eye-btn {
+  position: absolute;
+  right: 1.15rem;
+  background: none;
+  border: none;
+  color: #777777;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.welltrack-eye-btn:hover {
+  color: #ffffff;
+}
+
+.welltrack-checkbox-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  padding: 0.35rem 0;
+}
+
+.welltrack-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  color: #aaaaaa;
+  user-select: none;
+}
+
+.welltrack-checkbox-label input {
+  width: 1.15rem;
+  height: 1.15rem;
+  accent-color: #ccff00;
+  background-color: #1a1a1a;
+  border: 1px solid #333333;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.welltrack-submit-btn {
+  width: 100%;
+  background-color: #ccff00;
+  color: #000000;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 1.15rem;
+  border: none;
+  border-radius: 0.85rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  box-shadow: 0 0 15px rgba(204, 255, 0, 0.2);
+}
+
+.welltrack-submit-btn:hover:not(:disabled) {
+  background-color: #b3e600;
+  box-shadow: 0 0 25px rgba(204, 255, 0, 0.4);
+}
+
+.welltrack-submit-btn:active:not(:disabled) {
+  transform: scale(0.99);
+}
+
+.welltrack-submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Divider & Social */
+.welltrack-divider {
+  position: relative;
+  margin: 1.75rem 0;
+  text-align: center;
+}
+
+.welltrack-divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #222222;
+}
+
+.welltrack-divider span {
+  position: relative;
+  background-color: #121212;
+  padding: 0 0.85rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #777777;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.welltrack-social-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.welltrack-social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.85rem;
+  background-color: #181818;
+  border: 1px solid #262626;
+  border-radius: 0.85rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.welltrack-social-btn:hover {
+  background-color: #202020;
+  border-color: #333333;
+}
+
+/* Footer */
+.welltrack-footer {
+  width: 100%;
+  padding: 1.75rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #777777;
+  border-top: 1px solid #161616;
+}
+
+.welltrack-logo-img {
+  height: 160px;       /* Controla o tamanho da altura no cabeçalho */
+  width: auto;        /* Mantém a proporção original da imagem */
+  object-fit: contain;
+}
